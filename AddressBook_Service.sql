@@ -128,7 +128,7 @@ INSERT INTO user_details VALUES
      
 INSERT INTO location VALUES
  	(1,'avav', 'Bangalore', 'Karnataka', '55856'),
-	(2,'bsbgw', 'Delhi','wgbd', '2892'),
+	(2,'bsbgw', 'Hyderabad','Telengana', '2892'),
 	(3,'hewrtnv', 'Indore', 'MP', '198995');
     
 INSERT INTO Contact VALUES 
@@ -145,3 +145,17 @@ INSERT INTO user_contact_type_link VALUES
  	(1,101),
  	(2,100),
  	(3,101);
+
+#UC13
+SELECT  * FROM  (user_details INNER JOIN location ON user_details.user_id=location.user_id) 
+where city='Bangalore' or  state='MP';
+
+SELECT count(user_details.user_id) FROM user_details INNER JOIN location ON user_details.user_id=location.user_id
+where city='Hyderabad' or state= 'MP';
+
+SELECT * FROM user_details INNER JOIN location ON user_details.user_id=location.user_id
+WHERE city='Indore' ORDER BY first_name;
+
+SELECT count(user_details.user_id) FROM user_details INNER JOIN Contact ON user_details.user_id=Contact.user_id
+WHERE type_of_contact='Family';    
+    
