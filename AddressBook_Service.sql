@@ -66,3 +66,8 @@ WHERE first_name = 'Deepanjan';
 UPDATE address_book 
 SET address_book_type='Family'
 WHERE first_name = 'Deepanjan';
+
+#UC10
+SELECT address_book_type, count(*)
+FROM address_book
+GROUP BY address_book_type;
