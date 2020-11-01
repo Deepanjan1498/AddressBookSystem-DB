@@ -71,3 +71,9 @@ WHERE first_name = 'Deepanjan';
 SELECT address_book_type, count(*)
 FROM address_book
 GROUP BY address_book_type;
+
+#UC11
+INSERT INTO address_book
+VALUES
+('Tushar', 'Kumar', 'thirdaddress', 'Dhanbad','Jharkhand', 128457, 9877452222, 'Tusrt52@email.com','Addrress Book 3','Family'),
+('Uttam', 'Sharma', 'Bankmore', 'jamshedpur','Jharkhand', 123457, 9879682252, 'uttam54@email.com','Addrress Book 4','Friends');
