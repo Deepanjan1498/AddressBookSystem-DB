@@ -46,3 +46,23 @@ SELECT state,COUNT(state) FROM address_book GROUP BY state;
 #UC8
 SELECT * FROM address_book WHERE city = 'BGP'
 ORDER BY first_name; 
+
+#UC9
+ALTER TABLE address_book 
+ADD address_book_name VARCHAR(50)
+AFTER email;
+ALTER TABLE address_book 
+ADD address_book_type VARCHAR(50)
+AFTER address_book_name;
+UPDATE address_book 
+SET address_book_name='Address Book 1'
+WHERE first_name = 'Sandeep';
+UPDATE address_book 
+SET address_book_type='Friends'
+WHERE first_name = 'Sandeep';
+UPDATE address_book 
+SET address_book_name='Address Book 2'
+WHERE first_name = 'Deepanjan';
+UPDATE address_book 
+SET address_book_type='Family'
+WHERE first_name = 'Deepanjan';
