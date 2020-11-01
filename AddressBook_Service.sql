@@ -41,4 +41,8 @@ WHERE state = 'Bihar';
 
 #UC7
 SELECT city,COUNT(city) FROM address_book GROUP BY city; 		
-SELECT state,COUNT(state) FROM address_book GROUP BY state; 
+SELECT state,COUNT(state) FROM address_book GROUP BY state;
+
+#UC8
+SELECT * FROM address_book WHERE city = 'BGP'
+ORDER BY first_name; 
