@@ -17,3 +17,10 @@ CREATE TABLE address_book
  PRIMARY KEY  (first_name)
 );
 DESCRIBE address_book;
+
+#UC3
+INSERT INTO address_book VALUES  		
+	( 'Deepanjan', 'Sharma', 'firstaddress', 'BGP', 'Bihar', 128956, 9876896210, 'dsfe34@email.com' ),
+	( 'Adarsh', 'Kumar', 'secondaddress', 'Dhanbad','Jharkhand', 128457, 9877452222, 'Adarrt52@email.com'),
+	( 'Sandeep', 'Singh', 'Thirdaddress', 'Bhopal', 'MP', 256957, 8876312010, 'Sandy34@email.com' );
+    
