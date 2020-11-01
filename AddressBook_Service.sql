@@ -28,3 +28,7 @@ INSERT INTO address_book VALUES
 UPDATE address_book 				
 SET zip = 986325 
 WHERE first_name = 'Sandeep';
+
+#UC5
+DELETE FROM address_book 			
+WHERE first_name = 'Adarsh';
