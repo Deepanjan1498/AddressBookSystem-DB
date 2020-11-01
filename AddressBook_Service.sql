@@ -32,3 +32,9 @@ WHERE first_name = 'Sandeep';
 #UC5
 DELETE FROM address_book 			
 WHERE first_name = 'Adarsh';
+
+#UC6
+SELECT * FROM address_book 			
+WHERE city = 'Bhopal';
+SELECT * FROM address_book 			
+WHERE state = 'Bihar';
